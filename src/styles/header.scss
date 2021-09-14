@@ -1,0 +1,275 @@
+.header {
+  padding: 30px 0px 30px 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(229, 239, 240, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  .top {
+    position: relative;
+    padding-right: 25px;
+    z-index: 50;
+    margin-bottom: 80px;
+  }
+  .center {
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin-bottom: 200px;
+    .texts {
+      width: 55%;
+      h1 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .btns {
+        margin-top: 55px;
+        .btn {
+          color: #fff;
+          background-color: #7854f7;
+          border-radius: 60px;
+          padding: 20px 45px;
+          font-size: 18px;
+          line-height: 21px;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .or {
+          line-height: 25px;
+          font-weight: 700;
+          color: #299ef3;
+          cursor: pointer;
+        }
+        span {
+          color: #94a2b3;
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+    .imgs {
+      width: 40%;
+      position: relative;
+      margin-top: 45px;
+      display: flex;
+      .mainImg {
+        position: relative;
+        z-index: 10;
+        width: 60%;
+        img {
+          max-width: 100%;
+          width: 350px;
+        }
+      }
+      .shoes {
+        width: 40%;
+        position: relative;
+        z-index: 15;
+        background-color: #fff;
+        padding: 25px 0px 0 15px;
+        .topTitle {
+          display: flex;
+          font-size: 11.9802px;
+          margin-bottom: 20px;
+          line-height: 15px;
+          .blod {
+            font-weight: 700;
+            margin-right: 5px;
+          }
+          .grey {
+            color: #868686;
+          }
+        }
+        .title {
+          color: #222222;
+          font-weight: 400;
+          font-size: 24.9504px;
+          line-height: 25px;
+          margin-bottom: 25px;
+        }
+        .numbers {
+          display: flex;
+          margin-bottom: 15px;
+          button {
+            background: #f6f6f6;
+            border-radius: 4.99174px;
+            padding: 8px 8px 11px 10px;
+          }
+          button + button {
+            margin-left: 8px;
+          }
+        }
+        .pricesBox {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          .prices {
+            .price {
+              font-weight: 500;
+              font-size: 23.9604px;
+              line-height: 24px;
+              letter-spacing: 0.998348px;
+              color: #7854f7;
+              margin-bottom: 8px;
+            }
+            .oldprice {
+              font-size: 13.9769px;
+              line-height: 16px;
+              letter-spacing: 0.998348px;
+              text-decoration-line: line-through;
+              color: #868686;
+              margin-left: 10px;
+            }
+          }
+          .buttons {
+            button,
+            span {
+              background: #f6f6f6;
+              border-radius: 4.99174px;
+              padding: 13px;
+              font-size: 11.9802px;
+              line-height: 14px;
+              color: #222222;
+            }
+            button {
+              cursor: pointer;
+            }
+          }
+        }
+        .add {
+          text-align: center;
+          button {
+            width: 100%;
+            background: #7854f7;
+            border-radius: 4.99174px;
+            padding: 13px 0;
+            line-height: 14px;
+            font-weight: 400;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 11.9802px;
+          }
+        }
+      }
+      .topImg {
+        position: absolute;
+        z-index: 20;
+        top: -66px;
+        left: -56px;
+        img {
+          width: 230px;
+          border-radius: 25px;
+        }
+      }
+      .imgLeft {
+        position: absolute;
+        z-index: 5;
+        left: -55px;
+        top: 20px;
+        img {
+          width: 410px;
+        }
+      }
+      .imgTop {
+        position: absolute;
+        z-index: 5;
+        top: -71px;
+        left: 235px;
+        img {
+          width: 150px;
+        }
+      }
+      .imgBottom {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        img {
+          width: 200px;
+        }
+      }
+      .shop {
+        position: absolute;
+        z-index: 20;
+        width: 68px;
+        height: 68px;
+        background: #ffba49;
+        border-radius: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 18px;
+        left: -30px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .bankBox {
+        width: 280px;
+        position: absolute;
+        padding: 20px 10px 20px 10px;
+        z-index: 20;
+        background: #ffffff;
+        bottom: -90px;
+        left: 50px;
+        border-radius: 23.4905px;
+        box-shadow: -21px 24px 53px 3px rgba(0, 0, 0, 0.45);
+        .bank {
+          display: grid;
+          grid-template-columns: 30% 45% 25%;
+          justify-content: space-between;
+          align-items: center;
+          img {
+            height: 30px;
+          }
+          .text {
+            text-align: center;
+            font-size: 12px;
+            line-height: 25px;
+            color: #94a2b3;
+          }
+        }
+        .bank + .bank {
+          border-top: 1px solid #e5efff;
+        }
+      }
+      .safe {
+        position: absolute;
+        bottom: -60px;
+        background: #ef4358;
+        right: 65px;
+        width: 94.13px;
+        height: 60.46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        border-radius: 31.3552px;
+      }
+    }
+  }
+  .bottom {
+    position: relative;
+    z-index: 50;
+    text-align: center;
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .w {
+    width: 1767px;
+    position: absolute;
+    z-index: 20;
+    top: -345px;
+    left: 597px;
+  }
+}

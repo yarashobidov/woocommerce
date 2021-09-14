@@ -1,0 +1,109 @@
+.peoplesection {
+  overflow: hidden;
+  .texts {
+    width: 56%;
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+      font-size: 55px;
+      line-height: 70px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      color: #94a2b3;
+      margin-bottom: 25px;
+    }
+  }
+  .people {
+    background-image: url(../../images/grey.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    img {
+      position: relative;
+      z-index: 10;
+      width: 80%;
+      bottom: -7px;
+    }
+    .left,
+    .right,
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+      position: absolute;
+      z-index: 5;
+    }
+    .left {
+      left: -8px;
+      bottom: -87px;
+    }
+    .right {
+      right: -37px;
+      bottom: -69px;
+    }
+    .circle1 {
+      top: 28%;
+      left: 2%;
+      img {
+        width: 61px;
+      }
+    }
+    .circle2 {
+      top: 61%;
+      left: 7%;
+      img {
+        width: 34px;
+      }
+    }
+    .circle3 {
+      top: 54px;
+      right: 6%;
+      img {
+        width: 43px;
+      }
+    }
+    .circle4 {
+      bottom: -20%;
+      right: 30px;
+      z-index: 100 !important;
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  .textWhite {
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    background-color: #5f37ef;
+    padding: 60px 120px;
+    display: flex;
+    align-items: center;
+    .text {
+      font-size: 36px;
+      line-height: 52px;
+      margin-right: 50px;
+      font-weight: 700;
+      span {
+        font-weight: 400;
+      }
+    }
+    .button {
+      button {
+        color: #fff;
+        width: 207px;
+        border: 2px solid #ffffff;
+        box-sizing: border-box;
+        border-radius: 60px;
+        padding: 20px 46px;
+      }
+    }
+  }
+}

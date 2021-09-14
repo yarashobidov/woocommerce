@@ -1,0 +1,144 @@
+@mixin poa {
+  position: absolute;
+  z-index: 5;
+}
+
+.section {
+  background: #7854f7;
+  margin-bottom: 70px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  .boxs {
+    position: relative;
+    z-index: 10;
+    width: 85%;
+    margin: 0 auto;
+    .card {
+      display: flex;
+      .img {
+        position: relative;
+        z-index: 20;
+        img {
+          width: 450px;
+        }
+      }
+      .texts {
+        width: calc(100% - 570px);
+        color: #fff;
+        margin-top: 100px;
+        h3 {
+          font-size: 36px;
+          line-height: 46px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 35px;
+        }
+        .link {
+          font-weight: 500;
+          padding: 20px 24px;
+          color: #fff;
+          background: #70c217;
+          border-radius: 60px;
+          cursor: pointer;
+        }
+        .link {
+          text-decoration: none;
+        }
+      }
+    }
+    .card1 {
+      margin-right: 70px;
+      .img {
+        top: -40px;
+        img {
+          margin-right: 30px;
+        }
+      }
+      h3 {
+        width: 50%;
+      }
+    }
+    .card2 {
+      margin-left: 70px;
+      flex-direction: row-reverse;
+      .img {
+        bottom: -60px;
+      }
+      h3 {
+        width: 59%;
+      }
+    }
+  }
+  .woo,
+  .left,
+  .bottom,
+  .circle262,
+  .circle65,
+  .circle65_1,
+  .circle400 {
+    @include poa();
+  }
+  .woo {
+    top: -10px;
+    right: 0;
+  }
+  .left {
+    bottom: 28%;
+    left: 42px;
+  }
+  .bottom {
+    bottom: 10%;
+    right: 2px;
+  }
+  .circle262 {
+    bottom: 23%;
+    right: 33px;
+  }
+  .circle65 {
+    bottom: 38%;
+    right: 373px;
+    z-index: 60;
+    img {
+      width: 65px;
+    }
+  }
+  .circle65_1 {
+    top: 8%;
+    left: 60px;
+    img {
+      width: 65px;
+    }
+  }
+  .circle400 {
+    top: 19%;
+    left: 62px;
+    img {
+      width: 350px;
+    }
+  }
+}
+
+.section::after,
+.section::before {
+  content: "";
+  display: block;
+  height: 42px;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background-color: #fff;
+  left: 0;
+}
+.section::before {
+  border-radius: 0 0 50% 50%;
+  top: -15px;
+}
+
+.section::after {
+  bottom: -15px;
+  border-radius: 50% 50% 0 0;
+}
